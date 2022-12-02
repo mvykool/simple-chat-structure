@@ -40,3 +40,16 @@ html, body {
   border-radius: 5px;
   font-size: 20px;
 }
+
+.message{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+}
+
+.name{
+  font-size: 12px;
+  position: fixed;
+  margin-top: -20px;
+}
