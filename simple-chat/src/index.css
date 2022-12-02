@@ -10,6 +10,7 @@ html, body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  
 }
 
 .chat-container{
@@ -17,6 +18,9 @@ html, body {
   border-radius: 1%;
   width: 80%;
   background-color: gray;
+  overflow: hidden;
+  position: absolute;
+
 }
 
 .navbar{
@@ -41,15 +45,63 @@ html, body {
   font-size: 20px;
 }
 
+.message-container{
+  overflow: scroll;
+  width: 80vw;
+  position: absolute;
+}
+
 .message{
   display: flex;
   align-items: center;
   padding: 5px;
   background-color: white;
+  height: 50px;
+  margin: 5px;
+
+}
+
+.send{
+  background-color: blue;
+  color: white;
+}
+
+.received{
+  background-color: grey;
 }
 
 .name{
   font-size: 12px;
   position: fixed;
   margin-top: -20px;
+}
+
+.form{
+  height: 2rem;
+  width: 80vw;
+  display: flex;
+  font-size: 20px;
+  position: absolute;
+  bottom: 15%;
+}
+
+
+.input{
+  width: 100%;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.send-button{
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  padding: 2rem;
+  width: 10%;
+  background-color: green;
 }

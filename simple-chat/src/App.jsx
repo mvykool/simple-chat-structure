@@ -12,7 +12,8 @@ function App() {
       <div className='chat-container'>
         <NavBar/>
         {/**chat */}
-        <Chat/>
+        {user ? <Chat/>  : null}
+       
       </div>  
     </div>
   )

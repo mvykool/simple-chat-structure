@@ -24,7 +24,7 @@ const Chat = () => {
 
   return (
   <>
-    <div>
+    <div className='message-container'>
         {/**chat messange */}
         {messages && messages.map((message) => (
             <Message  key={message.id} message={message} />
@@ -33,7 +33,7 @@ const Chat = () => {
     </div>
 
     {/**send message */}
-    <SendMessage/>
+    <SendMessage scroll={scroll} />
     <span ref={scroll}>
 
     </span>
